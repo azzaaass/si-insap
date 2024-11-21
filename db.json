@@ -1,31 +1,24 @@
 {
   "barang": [
     {
-      "id": "1",
-      "name": "Meja belajar anak",
-      "stock_in": "20",
-      "stock_out": "2",
-      "image_path": "https://kayu-seru.com/wp-content/uploads/2020/10/meja-belajar-kecil.jpg"
-    },
-    {
       "id": "2",
       "name": "Kursi belajar anak",
-      "stock_in": "25",
-      "stock_out": "4",
+      "stock_in": 60,
+      "stock_out": 1,
       "image_path": "https://cdn.eurekabookhouse.co.id/ebh/product/all/cba01893-b63f-4035-a15e-8a56c99a1151.png"
     },
     {
       "id": "3",
       "name": "Lampu belajar",
-      "stock_in": "5",
-      "stock_out": "1",
+      "stock_in": 11,
+      "stock_out": 1,
       "image_path": "https://upload.jaknot.com/2023/12/images/products/bf1f7e/thumbnail/pookin-lampu-meja-belajar-led-model-nordic-wooden-art-12w-3-in-1-color-pk407.jpg"
     },
     {
       "id": "4",
       "name": "Spidol papan tulis",
-      "stock_in": "7",
-      "stock_out": "3",
+      "stock_in": 72,
+      "stock_out": 4,
       "image_path": "https://smb-padiumkm-images-public-prod.oss-ap-southeast-5.aliyuncs.com/product/image/22062024/648bd2e68e878d094969408f/66763063497e629ffb37057a/2e2124951b4999b42d7c625c7ee960.jpg"
     }
   ]

@@ -1,9 +1,10 @@
 import React from "react";
 
 const Navbar = () => {
+  const role = localStorage.getItem("userRole");
   return (
     <header className="w-full py-4 flex justify-end items-center gap-4 pr-8">
-      <p className="text-base">Hello Mr. Parman!</p>
+      <p className="text-base">Hello {role}!</p>
       <AvatarWithBorder image={"https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=2418"}/>
     </header>
   );
