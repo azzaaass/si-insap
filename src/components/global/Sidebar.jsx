@@ -80,7 +80,7 @@ const Sidebar = () => {
 export default Sidebar;
 
 // Button sidebar
-const ButtonSidebar = ({ link, activeMenu, name, iconPath, height = 22, width = 22 }) => {
+const ButtonSidebar = ({ link ,activeMenu, name, iconPath, height = 22, width = 22 }) => {
   return (
     <Link
       to={link}

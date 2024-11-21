@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchBarang } from "../services/barangSlice";
+import { fetchBarang, updateBarang } from "../services/barangSlice";
 import Barang from "../components/Barang.jsx";
 
 const Stock = () => {
+  const userRole = localStorage.getItem("userRole");
+
   const dispatch = useDispatch();
   const { barang, status, error } = useSelector((state) => state.barang);
 
@@ -19,14 +21,18 @@ const Stock = () => {
     return <p>{error}</p>;
   }
 
+  const handleUpdate = (updatedBarang) => {
+    dispatch(updateBarang(updatedBarang));
+  };
+
   return (
     <section>
       <h2 className="text-2xl font-semibold mb-4">Barang</h2>
-      {barang.map((item) => (
-        <li className="list-none" key={item.id}>
-          <Barang barang={item}/>
-        </li>
-      ))}
+      <div className="grid grid-cols-4 gap-4">
+        {barang.map((item) => (
+          <Barang barang={item} userRole={userRole} updatedBarang={handleUpdate} key={item.id} />
+        ))}
+      </div>
     </section>
   );
 };
